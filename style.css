@@ -5,6 +5,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
 }
 
 .container {
@@ -122,5 +123,29 @@ section .section-text .plain-text {
     color: white;
 }
 
+section .section-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
 
+section .section-img .contain-img {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    margin: 0 30px;
+    box-shadow: inset 0 0 10px;
+}
 
+.img-1 {
+    background-image: url(./img/visualsofdana-uwIRTJuTfkc-unsplash.jpg);
+    background-size: cover;
+}
+
+.img-2 {
+    background-image: url(./img/alexa-west-OOTEpsO2eV0-unsplash.jpg);
+    background-size: cover;
+}
