@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -87,17 +89,28 @@ section .section-text .tagline {
     padding: 0 70px;
 }
 
+.tagline::before {
+    content: '';
+    width: 30%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    bottom: 185px;
+    left: 70px;
+}
+
 section .section-text .tagline h1 {
     color: white;
     font-size: 85px;
     font-weight: 800;
+    line-height: 100px;
 }
 
 section .section-text .tagline h1 span {
     color: transparent;
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 3px white;
-    font-size: 85px;
+    font-size: 90px;
     font-weight: 800;
 }
 
