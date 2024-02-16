@@ -2,19 +2,19 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 
 .container {
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(./img/felfin-felfin-5MV818tzxeo-unsplash.jpg);
+    background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)), url(./img/felfin-felfin-5MV818tzxeo-unsplash.jpg);
     background-size: cover;
 }
 
 .container nav {
     width: 90%;
-    height: 70px;
+    height: 12%;
     background-color: transparent;
     border-bottom: 2px solid #ffffff9c;
     margin: 0 auto;
@@ -68,5 +68,40 @@ body {
 /* Section TagLine */
 
 section {
-    
+    width: 100%;
+    height: 88%;
+    display: flex;
+    flex-direction: row;
+}
+
+section .section-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+section .section-text .tagline {
+    width: 100%;
+    height: 70%;
+    padding: 0 70px;
+}
+
+section .section-text .tagline h1 {
+    color: white;
+    font-size: 85px;
+    font-weight: 800;
+}
+
+section .section-text .tagline h1 span {
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 3px white;
+    font-size: 85px;
+    font-weight: 800;
+}
+
+section .section-text .plain-text {
+    width: 100%;
+    height: 30%;
 }
