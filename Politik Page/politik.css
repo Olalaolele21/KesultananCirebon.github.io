@@ -3,8 +3,11 @@
 body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 .container {
@@ -21,8 +24,8 @@ nav {
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     display: flex;
     justify-content: space-between;
-    padding: 0 50px;
     align-items: center;
+    padding: 0 50px;
 }
 
 .container nav .menu {
@@ -32,7 +35,6 @@ nav {
     text-decoration: none;
     list-style: none;
     justify-content: center;
-    margin-right: 50px;
 }
 
 .container nav .menu ul {
@@ -62,4 +64,52 @@ nav {
     color: black;
     font-size: 20px;
     font-weight: 500;
+}
+
+/* section */
+section {
+    width: 100%;
+    height: 91vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section .section-tagline {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+section .section-tagline .tagline {
+    width: 100%;
+    height: 70%;
+}
+
+section .section-tagline .position {
+    width: 80%;
+    height: 30%;
+    padding-left: 50px;
+}
+
+section .section-tagline .tagline h1 {
+    font-size: 80px;
+    font-weight: bold;
+    color: black;
+    padding-left: 50px;
+}
+
+section .section-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-img img {
+    width: 550px;
+    height: 550px;
 }
