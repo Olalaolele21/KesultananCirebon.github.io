@@ -88,10 +88,24 @@ section .section-tagline .tagline {
     height: 70%;
 }
 
+.tagline::before {
+    content: '';
+    width: 30%;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    bottom: 165px;
+    left: 55px;
+}
+
 section .section-tagline .position {
     width: 80%;
     height: 30%;
-    padding-left: 50px;
+    padding-left: 55px;
+}
+
+section .section-tagline .position p {
+    font-size: 20px;
 }
 
 section .section-tagline .tagline h1 {
