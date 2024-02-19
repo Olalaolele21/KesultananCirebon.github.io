@@ -4,6 +4,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Poppins", sans-serif;
+    overflow-x: hidden;
 }
 
 * {
@@ -89,4 +90,47 @@ section {
     font-size: 60px;
     text-align: center;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+}
+
+/* Section Sosial Budaya hubungan dengan pihak luar */
+#Relation {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+#Relation h2 {
+    font-size: 40px;
+    text-align: center;
+    display: block;
+    width: 450px;
+    height: max-content;
+    margin: 40px auto;
+}
+
+#Relation h2::after {
+    content: '';
+    width: 500px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    right: -100px;
+    top: 100px;
+}
+
+#Relation h2::before {
+    content: '';
+    width: 500px;
+    height: 4px;
+    background-color: black;
+    position: absolute;
+    left: -100px;
+    top: 100px;
+}
+
+#Relation img {
+    width: 800px;
+    height: 500px;
+    margin: 0 auto;
 }
