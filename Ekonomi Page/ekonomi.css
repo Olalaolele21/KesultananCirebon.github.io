@@ -82,6 +82,7 @@ section {
     justify-content: center;
     align-items: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 #Landing .tagline {
