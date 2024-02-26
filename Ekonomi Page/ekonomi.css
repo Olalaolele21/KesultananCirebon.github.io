@@ -146,7 +146,7 @@ section {
     background-color: white;
     position: absolute;
     left: 300px;
-    top: 60px;
+    top: 90px;
 }
 
 #komoditas .contain-box {
@@ -174,4 +174,72 @@ section {
     color: white;
     text-align: center;
     margin: 30px auto;
+}
+
+/* Perdagangan Section */
+#perdagangan {
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 650px;
+}
+
+#perdagangan h2 {
+    display: block;
+    font-size: 45px;
+    width: 500px;
+    height: 50px;
+    font-weight: 500;
+    color: white;
+    line-height: 50px;
+    margin-left: 30px;
+}
+
+#perdagangan h2::after {
+    content: '';
+    width: 850px;
+    height: 2px;
+    background-color: white;
+    position: absolute;
+    left: 500px;
+    top: 90px;
+}
+
+#perdagangan .contain {
+    width: 80%;
+    height: 550px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: white;
+    margin: 100px auto;
+    position: relative;
+}
+
+.contain .img {
+    width: 40%;
+    background-color: #bebebe;
+    height: 100%;
+}
+
+.contain .txt {
+    width: 60%;
+    height: 100%;
+    padding: 5px 40px;
+}
+
+.txt h3 {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.txt h3::after {
+    content: '';
+    width: 250px;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    top: 70px;
+    left: 460px;
 }
