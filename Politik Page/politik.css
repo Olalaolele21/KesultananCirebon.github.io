@@ -187,6 +187,13 @@ section .section-img {
     line-height: 50px;
     text-decoration: none;
     font-weight: 400;
+    transition: all ease-in-out 0.5s;
+}
+
+#Politik-st .st-txt a:hover {
+    background-color: #2b2b2b;
+    color: white;
+    border: 2px solid white;
 }
 
 /* Section Masa Keemasan dan Keruntuhan */
@@ -209,6 +216,7 @@ section .section-img {
 
 #Politik-main .contain-st {
     margin: 10px 0;
+    border-radius: 10px;
 }
 
 #Politik-main .contain {
@@ -217,6 +225,8 @@ section .section-img {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    padding-bottom: 50px;
+    transition: 0.5s all ease-in-out;
 }
 
 h4 {
@@ -234,6 +244,141 @@ h4 {
     margin-top: -50px;
 }
 
+.contain:hover {
+    background-color: #2b2b2b;
+    cursor: pointer;
+}
+
+.contain:hover > * {
+    color: white;
+}
+
 #Politik-ed {
     background-color: #2b2b2b;
+}
+
+
+/* circle */
+.circle {
+    width: 70px;
+    height: 70px;
+    background-color: #2b2b2b;
+    border-radius: 50%;
+    position: fixed;
+    outline: 2px solid white;
+    top: 550px;
+    right: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    z-index: 2;
+}
+
+.circle:hover {
+    transition: all ease-in-out 0.3s;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.feather {
+    stroke: white;
+    color: white;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.301);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.modal .img {
+    width: 900px;
+    height: 500px;
+    background-color: white;
+}
+
+.active-modal {
+    display: flex !important;
+}
+
+/* Pemerintah Section */
+#pemerintah {
+    background-color: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+    position: relative;
+}
+
+#pemerintah h1 {
+    color: white;
+    text-align: center;
+    margin: 40px 0;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#pemerintah h1::after {
+    content: '';
+    width: 30%;
+    height: 4px;
+    background-color: white;
+    position: absolute;
+    top: 105px;
+    left: 460px;
+}
+
+#pemerintah .contain {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px;
+}
+
+#pemerintah .contain .box {
+    width: 500px;
+    height: 180px;
+    background-color: #eaeaee;
+    transition: 0.5s all ease-in-out;
+    display: flex;
+    border-radius: 10px;
+}
+
+.box:hover {
+    transform: scale(1.05);
+}
+
+.contain .box .left {
+    width: 40%;
+    background-color: #eaeaee;
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+}
+
+.contain .box .rig {
+    width: 60%;
+    height: 100%;
+    background-color: white;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rig .feather {
+    stroke: black;
+    width: 60px;
+    height: 60px;
+    stroke-width: 1;
 }
