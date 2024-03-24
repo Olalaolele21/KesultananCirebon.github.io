@@ -507,3 +507,8 @@ section {
     width: 110px !important;
     height: 120px !important;
   }
+
+  .top {
+    background-image: url(/img/kesultanan-cirebon-1615.png);
+    background-size: cover;
+  }
